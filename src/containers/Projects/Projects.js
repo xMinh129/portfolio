@@ -4,8 +4,9 @@ import ImageZoom from 'react-medium-image-zoom'
 import {Container, Relative, Flex} from '../../theme/grid';
 import { A } from '../../theme/types';
 import {
-  ImageSmall, Index
+  ImageSmall, Index, ImageContainer
 } from './Projects.style';
+import ParallaxImage from 'react-image-parallax2';
 
 
 class Projects extends Component {
@@ -36,6 +37,34 @@ class Projects extends Component {
             />
           </ImageSmall>
         </Flex>
+
+        <Container>
+          <Relative marginBottom="80px">
+            <Index float='right'>
+              <h1>02</h1>
+            </Index>
+            <h1 className="right">blended learning platform <A href="">@ Everest Education</A></h1>
+          </Relative>
+        </Container>
+
+        <Flex justify={'center'}>
+          <ImageSmall>
+            <ImageContainer>
+              <ParallaxImage
+                reduceHeight={1/3}
+                src={'https://rpearce.github.io/react-medium-image-zoom/bridge.jpg'}/>
+            </ImageContainer>
+          </ImageSmall>
+        </Flex>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
       </Container>
     );
   }
