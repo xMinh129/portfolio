@@ -9,7 +9,7 @@ export const Background = styled.div`
   top: 10vh;
   height: 80vh;
   background-image: url(${require('../../assets/body-background.png')});
-  opacity: 0.2;
+  opacity: 0.1;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;

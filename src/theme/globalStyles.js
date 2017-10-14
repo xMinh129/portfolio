@@ -14,4 +14,8 @@ injectGlobal`
   font-weight: normal;
   color: ${black};
   }
+
+  p {
+    font-size: 32px;
+  }
 `
