@@ -2,6 +2,7 @@ import React from 'react';
 import { IndexRoute, Router, Route, hashHistory } from 'react-router';
 import Home from './containers/Home/Home';
 import App from './containers/App/App';
+import Projects from './containers/Projects/Projects';
 
 Router.prototype.componentWillReceiveProps = function(nextProps) {
   let components = [];
@@ -18,10 +19,12 @@ Router.prototype.componentWillReceiveProps = function(nextProps) {
   components.forEach(React.createElement); // force patching
 };
 
+// Using React Router for routing
 export default (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
+      <Route path="/projects" component={Projects}/>
     </Route>
   </Router>
 );
