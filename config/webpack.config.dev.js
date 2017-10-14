@@ -65,6 +65,10 @@ module.exports = {
     publicPath: publicPath
   },
   resolve: {
+    moduleDirectories:[
+      'src',
+      'node_modules'
+    ],
     // This allows you to set a fallback for where Webpack should look for modules.
     // We read `NODE_PATH` environment variable in `paths.js` and pass paths here.
     // We use `fallback` instead of `root` because we want `node_modules` to "win"
@@ -82,7 +86,7 @@ module.exports = {
       'react-native': 'react-native-web'
     }
   },
-  
+
   module: {
     // First, run the linter.
     // It's important to do this before Babel processes the JS.
@@ -161,7 +165,7 @@ module.exports = {
       // Remember to add the new extension(s) to the "url" loader exclusion list.
     ]
   },
-  
+
   // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
