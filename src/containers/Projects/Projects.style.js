@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { yellow } from '../../theme/variables';
+import { yellow, red} from '../../theme/variables';
 
 
 export const ImageSmall = styled.div`
@@ -35,9 +35,18 @@ export const Index = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  width: 20em;
+  width: 30em;
   height: 20em;
   ${({ justify }) => justify && css`
     justify: ${justify};
   `}
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+//Project title
+export const Title = styled.h1`
+  color: ${red};
+  font-weight: bold;
+  margin-top: 0;
 `;

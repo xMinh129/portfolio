@@ -4,7 +4,7 @@ import ImageZoom from 'react-medium-image-zoom'
 import {Container, Relative, Flex} from '../../theme/grid';
 import { A } from '../../theme/types';
 import {
-  ImageSmall, Index, ImageContainer
+  ImageSmall, Index, ImageContainer, Title
 } from './Projects.style';
 import ParallaxImage from 'react-image-parallax2';
 
@@ -13,15 +13,16 @@ class Projects extends Component {
   render() {
     return (
       <Container >
+        <Title>Projects</Title>
         <Container>
-          <Relative marginBottom="80px">
+          <Relative arginTop="100px" marginBottom="50px">
             <Index>
               <h1>01</h1>
             </Index>
             <h1>blended learning platform <A href="">@ Everest Education</A></h1>
           </Relative>
           </Container>
-        <Flex justify={'center'}>
+        <Flex justify={'center'} marginBottom="5em">
           <ImageSmall>
             <ImageZoom
               image={{
@@ -39,7 +40,7 @@ class Projects extends Component {
         </Flex>
 
         <Container>
-          <Relative marginBottom="80px">
+          <Relative marginBottom="50px">
             <Index float='right'>
               <h1>02</h1>
             </Index>
@@ -47,7 +48,7 @@ class Projects extends Component {
           </Relative>
         </Container>
 
-        <Flex justify={'center'}>
+        <Flex justify='center'>
           <ImageSmall>
             <ImageContainer>
               <ParallaxImage
