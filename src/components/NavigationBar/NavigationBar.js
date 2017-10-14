@@ -9,7 +9,7 @@ class NavigationBar extends Component {
         <NavItem to="/">Home</NavItem>
         <NavItem to="/projects">Projects</NavItem>
         <NavItem to="/aboutMe">About Me</NavItem>
-        <NavItem to="/myResume">Resume</NavItem>
+        <NavItem to=""><a href="https://standardresume.co/minhvu">Resume</a></NavItem>
       </NavigationContainer>
     );
   }

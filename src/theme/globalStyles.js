@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import {black} from '../theme/variables';
+import {black, blue} from '../theme/variables';
 
 /* eslint-disable */
 injectGlobal`
@@ -13,6 +13,11 @@ injectGlobal`
   h1, h2, h3 {
   font-weight: normal;
   color: ${black};
+  }
+
+  a {
+    color: ${blue};
+    text-decoration: none;
   }
 
   p {

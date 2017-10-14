@@ -30,6 +30,5 @@ export const [H1, H2, H3, H4, H5, H6, P, Blockquote, Code, Span] = ['h1', 'h2', 
     `}
     ${({ color }) => color && `
       color: ${color};
-    `}
-    
+    `}    
   `)

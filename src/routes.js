@@ -27,7 +27,7 @@ export default (
       <IndexRoute component={Home}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/aboutMe" component={AboutMe}/>
-      <Route path="/resume" component={AboutMe}/>
+      s
     </Route>
   </Router>
 );
