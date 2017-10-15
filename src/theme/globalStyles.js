@@ -72,10 +72,75 @@ injectGlobal`
   }
   .handicon{
     position:relative;
-    transform: translateY(-80%) skewX(25deg);;
+    transform: translateY(90%) skewX(25deg) translateX(-40%);
     font-size: 48px;
 
 
   }
+
+  .link-right{
+    transition: .5s opacity, .5s transform;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: initial, initial;
+    transition-delay: initial, initial
+  }
+
+  .link-right:hover{
+    transform: translateX(50%);
+  }
+
+  .link-left{
+
+    transform: rotateY(180deg);
+  }
+
+  .link-left:hover{
+    transition: .5s opacity, .5s transform;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: initial, initial;
+
+    transform: rotateY(180deg) translateX(50%);
+  }
+
+  .follow{
+    margin: 0 10px 0 0;
+    padding: 0 20px 0 0;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 1.1em;
+    font-size: 1.2em;
+  }
+
+  .social-icon{
+    margin: 0 5px 0 0;
+    padding: 5px 0 0 0;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 1.1em;
+    font-size: 1.0em;
+  }
+  
+  .social-i{
+    transform: rotate(90deg);
+    margin: 0 15px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .social-i:hover{
+    color: ${red};
+  }
+
 
 `

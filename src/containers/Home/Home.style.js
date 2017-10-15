@@ -45,3 +45,63 @@ export const RevealP = styled.p`
     }
   `}
 `;
+
+export const BRFixDiv = styled.div`
+  display: block;
+  position: relative;
+`;
+
+export const BRExternalLink = styled.div`
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 5vw;
+  width: 75px;
+  height: 33px;
+  cursor: pointer;
+`;
+
+export const RightLinkP = styled.p`
+  font-size: 0.7em;
+  position: absolute;
+  top: -10px;
+  margin: 0;
+  right: 50%;
+  white-space: nowrap;
+  color: rgba(242, 95, 92, 1);
+  -webkit-transition: .5s opacity, .5s -webkit-transform;
+  -webkit-transition: .5s opacity, .5s transform;
+  transition: .5s opacity, .5s transform;
+  display: block;
+  line-height: 1.1em;
+`;
+
+export const BLExternalLink = styled.div`
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  width: 75px;
+  height: 33px;
+  left: 5vw;
+  cursor: pointer;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+`;
+
+export const LeftLinkP = styled.p`
+  font-size: 0.7em;
+  position: absolute;
+  top: -10px;
+  margin: 0;
+  left: 50%;
+  white-space: nowrap;
+  color: rgba(242, 95, 92, 1);
+  -webkit-transition: .5s opacity, .5s -webkit-transform;
+  -webkit-transition: .5s opacity, .5s transform;
+  transition: .5s opacity, .5s transform;
+`;
+
+export const BLFixDiv = styled.div`
+  display: block;
+  position: relative;
+`;

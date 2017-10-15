@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Background } from './App.style';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import SocialLink from '../../components/SocialMedia/SocialMedia';
 import ReallySmoothScroll from 'really-smooth-scroll';
 import {hashHistory} from 'react-router';
 
@@ -16,6 +17,7 @@ class App extends Component {
       <div>
         <Background/>
         <NavigationBar/>
+        <SocialLink/>
         {this.props.children}
       </div>
     );
