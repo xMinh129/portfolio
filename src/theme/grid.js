@@ -38,8 +38,8 @@ export const Relative = styled(Div)`
 
 export const Flex = styled(Div)`
   display: flex;
-  ${({ column }) => column && css`
-    flex-direction: column;
+  ${({ flexdirection }) => flexdirection && css`
+    flex-direction: flexdirection;
   `}
   ${({ justify }) => justify && css`
     justify-content: ${justify};

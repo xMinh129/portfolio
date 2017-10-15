@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import {black, blue} from '../theme/variables';
+import {black, blue, red, yellow} from '../theme/variables';
 
 /* eslint-disable */
 injectGlobal`
@@ -12,7 +12,9 @@ injectGlobal`
 
   h1, h2, h3 {
   font-weight: normal;
-  color: ${black};
+  ${({ color }) => color && `
+    color: ${color};
+  `}
   }
 
   a {
@@ -23,4 +25,57 @@ injectGlobal`
   p {
     font-size: 32px;
   }
+
+  .blink{
+    -webkit-animation-name: blink;
+     -moz-animation-name: blink;
+       -o-animation-name: blink;
+          animation-name: blink;
+  -webktit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+           animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+       -o-animation-duration: 2s;
+          animation-duration: 2s;
+          -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  }
+
+
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .command{
+
+  }
+  .handicon{
+    position:relative;
+    transform: translateY(-80%) skewX(25deg);;
+    font-size: 48px;
+
+
+  }
+
 `
