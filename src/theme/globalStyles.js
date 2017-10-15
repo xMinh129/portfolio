@@ -127,7 +127,7 @@ injectGlobal`
     line-height: 1.1em;
     font-size: 1.0em;
   }
-  
+
   .social-i{
     transform: rotate(90deg);
     margin: 0 15px;
@@ -141,6 +141,19 @@ injectGlobal`
   .social-i:hover{
     color: ${red};
   }
+
+  .footer{
+    float: right;
+  }
+
+  .footer-link{
+    text-decoration: underline;
+  }
+
+  footer-link:hover{
+    opacity: 0.5
+  }
+
 
 
 `

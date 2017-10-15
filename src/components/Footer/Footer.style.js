@@ -1,16 +1,18 @@
 import styled from 'styled-components';
-import { blue } from '../../theme/variables';
-import media from '../../theme/media';
+import { grey } from '../../theme/variables';
 
-export const SocialBar = styled.div`
+export const FooterBar = styled.div`
+
+  color: ${grey};
   position: fixed;
   bottom: 60px;
-  left: 40px;
-  
+  right: -15%;
+
 `;
 
-export const SocialDiv = styled.div`
-  color: rgba(36, 123, 160, 1);
+export const FooterDiv = styled.div`
+
+  color: ${grey};
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -25,5 +27,12 @@ export const SocialDiv = styled.div`
   -ms-transform-origin: left top;
   transform-origin: left top;
   display: flex;
+  bottom: 0px;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
 
 `;

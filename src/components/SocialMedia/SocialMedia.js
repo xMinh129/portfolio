@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SocialBar, SocialDiv} from './SocialMedia.style';
 
+
 class SocialLink extends Component {
   render() {
     return (
