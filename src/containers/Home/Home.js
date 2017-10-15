@@ -28,7 +28,7 @@ export default class Home extends Component {
             {
               ({isInView}) =>
                 <RevealP hide={!isInView}>
-                  My name is Minh. At a younger age, I always thought that I would never get a career in science or technology. I scored badly for Maths and programming. But as I grew up, the passion for coding grew along with me, and naturally, I fell in love with it. In 2014, I was given an internship opportunity at a fast-growing education startup. Seeing the tools that I built impacted the lives of many students was perhaps, the biggest validation and reminded me of why I'm doing what I'm doing.
+                  My name is Minh. At a younger age, I always thought that I would never get a career in science or technology. I scored badly for Maths and programming. But as I grew up, the passion for coding grew along with me, and naturally, I fell in love with it. In 2014, I was given an internship opportunity at a fast-growing EdTech startup. Seeing the tools that I built impacted the lives of many students was perhaps, the biggest validation, reminding me of why I'm doing what I'm doing.
                 </RevealP>
             }
           </WhenInView>
